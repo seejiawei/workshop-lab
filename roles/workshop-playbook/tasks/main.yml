@@ -4,11 +4,8 @@
 #- name: "Task 2: Set Login Banner"
 #  import_tasks: login-banner.yaml
 
-- name: "Task 3: Configure SNMP"
-  import_tasks: config-snmp.yaml
+#- name: "Task 3: Configure SNMP"
+#  import_tasks: config-snmp.yaml
 
-#- name: "Task 4: Create New User Account"
-#  vars:
-#    user_name:
-#    password:
-#  import_tasks: create-account.yaml
+- name: "Task 4: Create New User Account"
+  import_tasks: create-account.yaml
