@@ -1,0 +1,14 @@
+---
+- name: Configure snmp
+  cisco.ios.ios_snmp_server:
+    state: merged
+    config:
+      location: "Datacenter-1"
+      packet_size: 1024
+      communities:
+      - name: "public"
+        acl_v4: "10"
+        rw: false
+      - name: "private"
+        acl_v4: "20"
+        rw: true
