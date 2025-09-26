@@ -1,0 +1,14 @@
+---
+- name: Set login banner
+  cisco.ios.ios.banner:
+    banner: login
+    multiline_delimiter: "%"
+    text: "
+      ####################################################\n
+      #                                                  #\n
+      #    You have successfully entered this system     #\n
+      #                                                  #\n
+      #       Contact admin at admin@example.com         #\n
+      ####################################################
+      "
+    state: present
